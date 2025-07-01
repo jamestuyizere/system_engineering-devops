@@ -1,2 +1,9 @@
 #!/bin/bash
-echo "$BREATH^$LOVE" | bc
+result=1
+i=0
+while [ "$i" -lt "$LOVE" ]
+do
+  result=$((result * BREATH))
+  i=$((i + 1))
+done
+echo $result
