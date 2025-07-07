@@ -1,6 +1,2 @@
 #!/bin/bash
-if [ "$(whoami)" = "root" ]; then
-  echo "hello MyUser"
-else
-  echo "hello $(whoami)"
-fi
+echo "hello MyUser"
