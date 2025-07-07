@@ -1,0 +1,4 @@
+#!/bin/bash
+env
+declare -p
+declare -f
