@@ -1,0 +1,6 @@
+#!/bin/bash
+# shellcheck disable=SC2009
+pgrep -a bash | while read -r pid cmd; do
+  process_name=$(basename "$cmd")
+  echo "$pid $process_name"
+done
