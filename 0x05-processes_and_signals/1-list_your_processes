@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# A Bash script that lists all processes with hierarchy, CPU, MEM usage, user, PID, and command
+
+ps -e -o user,pid,pcpu,pmem,vsz,rss,tty,stat,start,time,command --forest
